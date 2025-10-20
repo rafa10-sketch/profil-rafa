@@ -16,6 +16,7 @@ Halaman web profil pribadi dibuat untuk latihan HTML, CSS, dan JavaScript.
 - HTML5
 - CSS3
 - JavaScript dasar
+- MySQL
 
 ## Screenshot
 ![Screenshot Profil](images/screenshot.png)
