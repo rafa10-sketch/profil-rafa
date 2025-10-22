@@ -14,7 +14,9 @@
             <a href="#skills">Skill</a>
             <a href="#projects">Proyek</a>
             <a href="#contact">Kontak</a>
+            <button id="toggleMode">Ubah Tema</button>
         </nav>
+        
     </header>
     <main>
         <section id="about">
@@ -55,18 +57,25 @@
                 <img src="images/logo.JPG" alt="proyek2" width="180">
             </div>
         </section>
+    
         <section id="contact">
             <h2>Hubungi Saya</h2>
-            <form>
+            <form id="contactForm">
                 <label>Nama:</label>
                 <input type="text" placeholder="Nama Anda"><br><br>
                 <label>Email:</label>
-                <input type="email" placeholder="Email Anda"><br><br>
+                <input type="email" id="email" placeholder="Email Anda"><br><br>
+                <small class="error" id="emailError"></small>
                 <label>Pesan:</label>
                 <textarea rows="4" cols="30"></textarea><br><br>
                 <button type="submit">Kirim</button>
                 <button type="reset">Hapus</button>
             </form>
+            <div id="thankYouMessage" style="display: none;">
+                <h3>Terima kasih sudah menghubungi saya!</h3>
+                <p>Saya akan membalas pesan Anda secepatnya.</p>
+                <button id="backButton">Kembali ke Form</button>
+            </div>
         </section>
         <footer>
             <p>© 2025 Rafa Nuragani. All Rights Reserved.</p>

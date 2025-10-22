@@ -44,6 +44,47 @@ main section {
     border-radius: 10px; /*sudut membulat section */
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 1); /*bayangan lembut */
 }
+/*ubah tema
+/* Elemen umum */
+header, section, footer {
+    background: gray;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/*dark mode*/
+body.dark-mode {
+    background-color: #1a056c;
+    color: #eaeaea;
+}
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer {
+    background: #524343;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+body.dark-mode #contactForm {
+    background-color: rgb(103, 73, 51);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,3);
+}
+
+#toogleMode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#toogleMode:hover {
+    background: #0056b3;
+}
 
 /*images */
 img {
@@ -54,11 +95,33 @@ img {
     display: flexbox;
 }
 .gallery {
-    display: grid;
-    justify-content: center;
+    display: grid; /* mengubah container, ehingga elemen anak bisa diatur lebih fleksibel */
+    justify-content: center; /* content rata tengah */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    gap: 30px; /* Memberi jarak antar elemen di dalam form, otomatis tanpa perlu margin di setiap elemen */
     padding: 10px;
+}
+
+#contactForm {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,3);
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#contactForm button {
+    align-self: flex-start;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /*button */
@@ -73,6 +136,29 @@ button {
 
 button:hover {
     background-color: red;
+}
+
+/*Pesan error */
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+/*Mode terimakasih*/
+#thankYouMessage {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#thankYouMessage h3 {
+    color: green;
+}
+
+#backButton {
+    text-align: center;
+    padding: 20px;
 }
 
 /*footer */
