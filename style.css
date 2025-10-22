@@ -1,184 +1,184 @@
-/*Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /*Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-/* body */
-body {
-    font-family: Arial, sans-serif; /*jenis font halaman */
-    line-height: 1.6; /*jarak antara baris teks */
-    background-color: #f5f5f5; /*warna background */
-    color: #333; /*warna teks default */
-    padding: 20px; /*jarak tepi halaman */
-}
+    /* body */
+    body {
+        font-family: Arial, sans-serif; /*jenis font halaman */
+        line-height: 1.6; /*jarak antara baris teks */
+        background-color: #f5f5f5; /*warna background */
+        color: #333; /*warna teks default */
+        padding: 20px; /*jarak tepi halaman */
+    }
 
-/*header */
-header {
-    text-align: center; /*text rata tengah */
-    padding: 20px; /*jarak di dalam header */
-    background-color: gray; /* warna header */
-    color: white; /*warna teks */
-    border-radius: 10px; /*sudut membulat */
-}
+    /*header */
+    header {
+        text-align: center; /*text rata tengah */
+        padding: 20px; /*jarak di dalam header */
+        background-color: gray; /* warna header */
+        color: white; /*warna teks */
+        border-radius: 10px; /*sudut membulat */
+    }
 
-/* Nav header */
-header nav a {
-    margin: 0 10px; /*jarak horizontal antar link */
-    text-decoration: none; /* menghapus garis bawah link */
-    color: white;
-    font-weight: bold; /* membuat teks tebal */
-}
-
-header nav a:hover {
-    color: red; /* menambahkan warna saat hover */
-    text-decoration: underline; /* menambahkan garis bawah saat hover */
-}
-
-/*main section */
-main section {
-    background-color: antiquewhite; /*warna untuk tiap section */
-    padding: 20px; /*jarak di dalam section */
-    margin: 20px 0; /*jarak antar section */
-    border-radius: 10px; /*sudut membulat section */
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 1); /*bayangan lembut */
-}
-/*ubah tema
-/* Elemen umum */
-header, section, footer {
-    background: gray;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-/*dark mode*/
-body.dark-mode {
-    background-color: #1a056c;
-    color: #eaeaea;
-}
-body.dark-mode header,
-body.dark-mode section,
-body.dark-mode footer {
-    background: #524343;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-}
-body.dark-mode #contactForm {
-    background-color: rgb(103, 73, 51);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,3);
-}
-
-#toogleMode {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 10px;
-    background: #007bff;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#toogleMode:hover {
-    background: #0056b3;
-}
-
-/*images */
-img {
-    border-radius: 50px; /* sudut membulat gambar */
-    max-width: 100%; /*gambar tidak melebihi lebar container */
-    height: auto; /*tinggi mengikuti proporsi */
-    box-shadow: 0 4px 8px rgba(0,0,0,2); /*menambahkan shaadow */
-    display: flexbox;
-}
-.gallery {
-    display: grid; /* mengubah container, ehingga elemen anak bisa diatur lebih fleksibel */
-    justify-content: center; /* content rata tengah */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px; /* Memberi jarak antar elemen di dalam form, otomatis tanpa perlu margin di setiap elemen */
-    padding: 10px;
-}
-
-#contactForm {
-    background-color: antiquewhite;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,3);
-}
-
-#contactForm input,
-#contactForm textarea {
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 10px;
-}
-
-#contactForm button {
-    align-self: flex-start;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-/*button */
-button {
-    background-color: white; /*memberikan warna tombol */
-    color: black; /* teks warna putih */
-    padding: 10px 20px; /* jarak dalam tombol */
-    border: none; /*menghilangkan border */
-    border-radius: 5px; /*sudut tombol */
-    cursor: pointer; /*cursor berubah tangan saat hover */
-}
-
-button:hover {
-    background-color: red;
-}
-
-/*Pesan error */
-.error {
-    color: red;
-    font-size: 0.9rem;
-}
-
-/*Mode terimakasih*/
-#thankYouMessage {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#thankYouMessage h3 {
-    color: green;
-}
-
-#backButton {
-    text-align: center;
-    padding: 20px;
-}
-
-/*footer */
-footer {
-    text-align: center; /*teks rata tengah */
-    margin-top: 20px; /*jarak dari content di atas */
-    padding: 10px; /*jarak didalam footer */
-    background-color: gray; /*warna background */
-    color: white; /*teks putih */
-    border-radius: 10px; /*sudut bulat */
-}
-
-/* responsive dedign */
-@media (max-width: 768px) {
+    /* Nav header */
     header nav a {
-        display: block; /*link navigasi jadi satu garis vertikal */
-        margin: 10px 0; /*jarak antar link */
+        margin: 0 10px; /*jarak horizontal antar link */
+        text-decoration: none; /* menghapus garis bawah link */
+        color: white;
+        font-weight: bold; /* membuat teks tebal */
     }
+
+    header nav a:hover {
+        color: red; /* menambahkan warna saat hover */
+        text-decoration: underline; /* menambahkan garis bawah saat hover */
+    }
+
+    /*main section */
+    main section {
+        background-color: antiquewhite; /*warna untuk tiap section */
+        padding: 20px; /*jarak di dalam section */
+        margin: 20px 0; /*jarak antar section */
+        border-radius: 10px; /*sudut membulat section */
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 1); /*bayangan lembut */
+    }
+    /*ubah tema
+    /* Elemen umum */
+    header, section, footer {
+        background: gray;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /*dark mode*/
+    body.dark-mode {
+        background-color: #1a056c;
+        color: #eaeaea;
+    }
+    body.dark-mode header,
+    body.dark-mode section,
+    body.dark-mode footer {
+        background: #524343;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    body.dark-mode #contactForm {
+        background-color: rgb(103, 73, 51);
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,3);
+    }
+
+    #toggleMode {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 10px;
+        background: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #toggleMode:hover {
+        background: #0056b3;
+    }
+
+    /*images */
     img {
-        width: 100%; /* gambar penuh di layar kecil */
-        height: auto; /*proporsional tinggi gambar */
+        border-radius: 50px; /* sudut membulat gambar */
+        max-width: 100%; /*gambar tidak melebihi lebar container */
+        height: auto; /*tinggi mengikuti proporsi */
+        box-shadow: 0 4px 8px rgba(0,0,0,2); /*menambahkan shaadow */
+        display: flexbox;
     }
-}
+    .gallery {
+        display: grid; /* mengubah container, ehingga elemen anak bisa diatur lebih fleksibel */
+        justify-content: center; /* content rata tengah */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px; /* Memberi jarak antar elemen di dalam form, otomatis tanpa perlu margin di setiap elemen */
+        padding: 10px;
+    }
+
+    #contactForm {
+        background-color: antiquewhite;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,3);
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+
+    #contactForm button {
+        align-self: flex-start;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    /*button */
+    button {
+        background-color: white; /*memberikan warna tombol */
+        color: black; /* teks warna putih */
+        padding: 10px 20px; /* jarak dalam tombol */
+        border: none; /*menghilangkan border */
+        border-radius: 5px; /*sudut tombol */
+        cursor: pointer; /*cursor berubah tangan saat hover */
+    }
+
+    button:hover {
+        background-color: red;
+    }
+
+    /*Pesan error */
+    .error {
+        color: red;
+        font-size: 0.9rem;
+    }
+
+    /*Mode terimakasih*/
+    #thankYouMessage {
+        text-align: center;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    #thankYouMessage h3 {
+        color: green;
+    }
+
+    #backButton {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /*footer */
+    footer {
+        text-align: center; /*teks rata tengah */
+        margin-top: 20px; /*jarak dari content di atas */
+        padding: 10px; /*jarak didalam footer */
+        background-color: gray; /*warna background */
+        color: white; /*teks putih */
+        border-radius: 10px; /*sudut bulat */
+    }
+
+    /* responsive dedign */
+    @media (max-width: 768px) {
+        header nav a {
+            display: block; /*link navigasi jadi satu garis vertikal */
+            margin: 10px 0; /*jarak antar link */
+        }
+        img {
+            width: 100%; /* gambar penuh di layar kecil */
+            height: auto; /*proporsional tinggi gambar */
+        }
+    }
